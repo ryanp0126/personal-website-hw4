@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Ryan Puah">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan's Website</title>
+    <link href="images/favicon.ico" rel="icon">
+	<link href="styles/main.css" rel="stylesheet">
+    <style>
+        p {
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <div id = "layout">
+        <header id = "header">
+            <nav id="nav">
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>Projects</li>
+                    <li>Articles</li>
+                    <li>Contact</li>
+                </ul>
+               
+            </nav>
+
+        </header>
+    </div>
+    <main>
+        <h1>Ryan's Website</h1> 
+        <p>Hi! I'm a student majoring in <strong>Computer Engineering</strong> in the <i>ECE</i> department at UCSD. This is my <em>personal</em> website.</p>
+        <aside>
+            <p>Lookin for a job</p>
+        </aside>
+        <h2>Latest Posts</h2>
+        <div class="container">
+            <div class="box">Article1</div>
+            <div class="box">Article2</div>
+            <div class="box">Article3</div>
+        </div>
+        <details>
+            <summary>Why are there no articles?</summary>
+            The articles are not written yet.
+        </details>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Summary of my <code>projects</code></p>
+            <ol>
+                <li>Social Compass</li>
+                <li>AI for games</li>
+            </ol>
+        </section>
+
+        <section id="Links">
+            <h2>Useful Links</h2>
+            <a href="http://canvas.ucsd.edu">Canvas</a>
+        </section>
+        <h2>My fav song</h2>
+        <audio controls>
+            <source src="gymnopedie.mp3" type="audio/mp3">
+        </audio>
+        <b>My fav bear</b>
+        <div class="img">
+            <picture>
+                <source srcset="images/bear.png" alt="Warren Bear" height="430" width="700" media="(min-width:600px)">
+                <img src="images/bear.png" height="300" width="400" alt="bear"/>
+            </picture>
+        </div>
+        <figure>
+            <img src="images/triton.jpg" alt="Triton guy" height="430" width="700">
+            <figcaption>Triton guy</figcaption>
+        </figure>
+        <section class="video">
+            <h2>vid about UCSD</h2>
+            <video controls height="393" width="700">
+				<source src="videos/videoplayback.mp4" type="video/mp4">
+				<div class="error">Your browser does not support the video tag.</div>
+			</video>
+        </section>
+        <iframe></iframe>
+        <canvas id="myCanvas">
+            Your browser does not support the canvas tag.
+            </canvas>
+            
+            <script>
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 80, 80);
+            </script>
+        
+    </main>
+
+    <table>
+        <caption>
+            <pre>table for fun</pre>
+        </caption>
+        <colgroup>
+            <col span="1" class="fun">
+        </colgroup>
+        <tr>
+            <th>hello</th>
+        </tr>
+        <tr>
+            <td>hi</td>
+        </tr>
+    </table>
+
+    <template id="tablerow">
+        <tr>
+            <td class="data"></td>
+        </tr>
+    </template>
+
+    <form>
+        <fieldset>
+            <legend>Contact me!</legend>
+            <select id="type">
+                <optgroup label="feedback">
+                    <option value="good">Good</option>
+                    <option value="not good">Not Good</option>
+                </optgroup>
+                <optgroup label="rating">
+                    <option value="5 stars">5 stars</option>
+                    <option value="4 stars">4 stars</option>
+
+                </optgroup>
+
+            </select>
+            <br>
+            <label for="Continent">Select your Continent:</label>
+            <datalist id="Continents">
+                <option value="Asia">
+                </option>
+                <option value="North America"></option>
+                <option value="South America"></option>
+                <option value="Europe"></option>
+            </datalist>
+            <input list="Continents" id="Continent">
+            <br>
+            <label for="sample-text-area">Have feedback?</label>
+            <br>
+            <textarea id="sample-text-area">Feedback here</textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </fieldset>
+        
+    </form>
+	<script src="index.js"></script>
+
+
+    <footer>
+		<hr>
+		<p>💯This page was made with &hearts; by RYAN 💯</p>
+	</footer>
+  </body>
+</html>
