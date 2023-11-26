@@ -6,7 +6,8 @@
 	--subheading-color : #940b92;
 	--subheading-size :  1.5em;
 	--body-size :        1.25em;
-
+	--bg-color-dark: 	 rgb(46, 44, 44);
+	--text-color-dark:	antiquewhite;
 	--error-color :      #e70d0d;
 	/* careful is this the right idea or not? */
 	--error-msg : "Error : JavaScript is not active. Degraded site experience";

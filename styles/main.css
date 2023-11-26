@@ -6,6 +6,35 @@
     padding: 0;
 }
 
+.wrapper {
+    display:grid;
+    justify-content: center;
+    grid-template-areas: "contact""button";
+    grid-template-columns: 12em;
+    grid-gap: .6em;
+    padding:1em;
+}
+
+.form-row > label {
+    grid-area: labels;
+    width: 6em;
+    position: relative;
+}
+.form-row > input {
+    grid-area: contact;
+    width: 100%;
+    padding: 1.1em;
+    border:none;
+    margin-bottom: 1em;
+}
+
+.switch {
+    position:relative;
+    top: 10px;
+    right:10px;
+    display:block;
+    height: 40px;
+}
 .container {
     display:flex;
     flex-direction: row;
