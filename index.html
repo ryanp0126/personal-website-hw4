@@ -126,19 +126,24 @@
         <legend>Contact Form</legend>
         <formfield class="form-row">
             <label for="name">Name:</label>
-            <input type="text" name="name" required>
+            <input type="text" pattern ="[a-zA-Z ]+" name="name" id ="name" required >
+            <span class="error-message"></span>
 
         </formfield>
 
         <formfield class="form-row">
             <label for="mail">Email:</label>
             <input type="email" name="mail" id="mail" required>
+            <span class="error-message"></span>
         </formfield>
 
         <formfield class="form-row">
             <label for="comments">Comments:</label>
-            <input type="text" name="comments" minlength="10" maxlength="150" required >
+            <input type="text" id ="comments" name="comments" minlength="10" maxlength="150" required >
+            <span class="error-message"></span>
         </formfield>
+
+        <p> You have <span id="charcount"></span>characters remaining.</p>
         <output name="error"></output>
         <output name="info"></output>
         <input type="hidden" name="possible_bot" value="true">

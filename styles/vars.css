@@ -1,6 +1,6 @@
 :root {
-	--background-color : #610c9f;
-	--text-color :       #e95793;
+	--bg-color-light : #610c9f;
+	--text-color-light :       #e95793;
 	--heading-color :    #da0c81; 
 	--heading-size :     2em;
 	--subheading-color : #940b92;
