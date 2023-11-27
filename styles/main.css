@@ -15,6 +15,40 @@
     padding:1em;
 }
 
+.switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: grey;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left:4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius:50%;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
 .form-row > label {
     grid-area: labels;
     width: 6em;
